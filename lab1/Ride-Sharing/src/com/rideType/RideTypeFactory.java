@@ -1,7 +1,7 @@
 package com.rideType;
 
 public class RideTypeFactory {
-    public RideType getRideType(String type, double distance) {
+    public static RideType getRideType(String type, double distance) {
         if (type == null) {
             return null;
         }
