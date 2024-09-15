@@ -1,11 +1,13 @@
 package com.riderdriver;
 
+import com.notify.NotificationService;
 import com.trip.Trip;
 
 public class Driver {
     private String id;
     private String name;
     private double rating;
+    private NotificationService notificationService;
 
     public Driver(String id, String name, double rating) {
         this.id = id;
@@ -19,5 +21,21 @@ public class Driver {
 
     public void acceptRide(Trip trip) {
         System.out.println("Driver accepted the trip.");
+    }
+
+    public void startRide(Trip trip) {
+        System.out.println("Ride started.");
+    }
+
+    public void completeRide(Trip trip) {
+        System.out.println("Ride completed.");
+    }
+
+    public void setNotificationService(NotificationService notificationService) {
+        this.notificationService = notificationService;
+    }
+
+    public double getRating() {
+        return rating;
     }
 }
