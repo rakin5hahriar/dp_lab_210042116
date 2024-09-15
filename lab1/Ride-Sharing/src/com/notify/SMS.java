@@ -8,7 +8,7 @@ public class SMS implements NotificationService{
     }
 
     @Override
-    public void sendNotification(String message) {
+    public void sendNotification(Object name, String message) {
         System.out.println("Sending SMS to " + phoneNumber + ": " + message);
     }
 }

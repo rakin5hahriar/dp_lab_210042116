@@ -17,6 +17,10 @@ public class Rider {
         this.rating = rating;
     }
 
+    public Rider(String riderName) {
+        this.name = riderName;
+    }
+
     public void requestRide(String rideType, double distance){
         RideType type = RideTypeFactory.getRideType(rideType, distance);
         System.out.println("Requesting ride...");
@@ -32,5 +36,9 @@ public class Rider {
 
     public void setNotificationService(NotificationService notificationService) {
         this.notificationService = notificationService;
+    }
+
+    public Object getName() {
+        return name;
     }
 }

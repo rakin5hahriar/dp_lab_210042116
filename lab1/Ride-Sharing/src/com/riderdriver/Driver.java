@@ -15,11 +15,14 @@ public class Driver {
         this.rating = rating;
     }
 
+    public Driver(String driverName) {
+    }
+
     public void setRating(double rating) {
         this.rating = rating;
     }
 
-    public void acceptRide(Trip trip) {
+    public void acceptRide() {
         System.out.println("Driver accepted the trip.");
     }
 

@@ -6,10 +6,10 @@ import com.riderdriver.Driver;
 import com.riderdriver.Rider;
 
 public class Trip {
-    private RideType rideType;
+    public RideType rideType;
     private Driver driver;
     private Rider rider;
-    private double fare;
+    public double fare;
     private String status;
 
     public Trip(RideType rideType, Driver driver, Rider rider) {

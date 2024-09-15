@@ -8,7 +8,7 @@ public class InApp implements NotificationService{
     }
 
     @Override
-    public void sendNotification(String message) {
+    public void sendNotification(Object name, String message) {
         System.out.println("Sending in-app notification to " + userId + ": " + message);
     }
 }

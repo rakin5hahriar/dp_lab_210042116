@@ -1,5 +1,5 @@
 package com.notify;
 
 public interface NotificationService {
-    void sendNotification(String message);
+    void sendNotification(Object name, String message);
 }

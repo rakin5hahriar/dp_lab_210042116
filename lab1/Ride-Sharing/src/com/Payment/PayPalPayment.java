@@ -1,6 +1,6 @@
 package com.Payment;
 
-public class PayPalPayment {
+public class PayPalPayment implements PaymentMethod{
     private String email;
 
     public PayPalPayment(String email) {
