@@ -1,6 +1,6 @@
 package com.Payment;
 
-public class DigitalWalletPayment {
+public class DigitalWalletPayment implements PaymentMethod {
     private String walletId;
 
     public DigitalWalletPayment(String walletId) {

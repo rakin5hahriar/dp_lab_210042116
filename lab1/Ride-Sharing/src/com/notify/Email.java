@@ -8,7 +8,7 @@ public class Email implements NotificationService{
     }
 
     @Override
-    public void sendNotification(Object name, String message) {
+    public void sendNotification(String message) {
         System.out.println("Sending email to " + emailId + ": " + message);
     }
 }

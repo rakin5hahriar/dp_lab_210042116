@@ -1,5 +1,4 @@
 import com.Payment.PayPalPayment;
-import com.Payment.PaymentMethod;
 import com.notify.*;
 import com.rideType.BikeRide;
 import com.riderdriver.*;
