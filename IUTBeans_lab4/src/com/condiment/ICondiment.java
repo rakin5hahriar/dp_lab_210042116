@@ -1,6 +1,14 @@
 package com.condiment;
 
-import com.beverage.IBeverage;
+import com.beverage.ICoffee;
 
-public interface ICondiment extends IBeverage {
+public interface ICondiment {
+    String getDescription();
+
+    double getCost();
+
+    ICondiment getNext();
+
+    void setNext(ICondiment condiment);
+
 }

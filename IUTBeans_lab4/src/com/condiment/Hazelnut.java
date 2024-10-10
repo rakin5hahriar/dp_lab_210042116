@@ -1,19 +1,19 @@
 package com.condiment;
 
-import com.beverage.IBeverage;
+import com.beverage.ICoffee;
 
-public class Hazelnut extends BaseCondiment {
-    public Hazelnut(IBeverage beverage) {
-        super(beverage);
+public class Hazelnut extends CondimentDecorator {
+    public Hazelnut(ICondiment next) {
+        super(next);
     }
 
     @Override
-    protected String getCondimentName() {
+    public String getDescription() {
         return "Hazelnut";
     }
 
     @Override
-    protected double getCondimentCost() {
-        return 0.60;
+    public double getCost() {
+        return 0.50;
     }
 }

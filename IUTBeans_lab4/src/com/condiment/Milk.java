@@ -1,19 +1,19 @@
 package com.condiment;
 
-import com.beverage.IBeverage;
+import com.beverage.ICoffee;
 
-public class Milk extends BaseCondiment {
-    public Milk(IBeverage beverage) {
-        super(beverage);
+public class Milk extends CondimentDecorator {
+    public Milk(ICondiment next) {
+        super(next);
     }
 
     @Override
-    protected String getCondimentName() {
+    public String getDescription() {
         return "Milk";
     }
 
     @Override
-    protected double getCondimentCost() {
+    public double getCost() {
         return 0.50;
     }
 }

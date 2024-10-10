@@ -1,11 +1,9 @@
 package com.beverage;
 
-import com.beverage.BaseBeverage;
-
-public class Latte extends BaseBeverage {
+public class Latte extends BaseCoffee {
     @Override
     protected String getBaseName() {
-        return "com.beverage.Latte";
+        return "Latte";
     }
 
     @Override
