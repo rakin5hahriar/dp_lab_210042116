@@ -11,7 +11,9 @@ public class Main {
         System.out.println("Base Order -> " + coffee.getDescription());
 
         System.out.println("Adding condiments to the coffee...");
-        coffee.add(new Hazelnut(new Milk(new Sugar(null))));
+
+
+        coffee.add(new Hazelnut(new Milk(new Sugar(new Hazelnut(new Milk(null))))));
 
         System.out.println();
         System.out.println("Final Order -> " + coffee.getDescription());

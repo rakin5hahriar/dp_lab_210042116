@@ -8,6 +8,6 @@ public class Latte extends BaseCoffee {
 
     @Override
     protected double getBaseCost() {
-        return 2.49;
+        return 100;
     }
 }
